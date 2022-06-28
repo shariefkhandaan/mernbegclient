@@ -1,38 +1,83 @@
 .App {
-  text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
+  display:flex;
+  height: 100vh;
   flex-direction: column;
   align-items: center;
+}
+
+html body{
+  margin: 0;
+padding-top: 0;}
+
+.inputs{
+  height: 400px;
+  width: 100%;
+  display:flex;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
+  align-items: center;
+  flex-direction: column;
+  background-color: blue;
+}
+
+.inputs input{
+  width:200px;
+  height:50px;
+  margin: 10px;
+  font-size: 18px;
+  padding-left: 10px;
+}
+
+.inputs button{
+ border:none;
+ width:150px;
+ height: 50px;
+ background-color: brown;
+ color: aliceblue;
+ border-radius: 10px;
+}
+
+button:hover{
+  cursor: pointer;
+}
+
+.friend{
+  width: 500px;;
+  height:60px;
+  background-color: rgb(137, 115, 246);
   color: white;
+  margin: 10px;
+  font-family: 'Courier New', Courier, monospace;
+  display: flex;
+  margin: 10px;
 }
 
-.App-link {
-  color: #61dafb;
+.friend h3{
+  margin-left: 15px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.listOfFriends{
+  display:flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin-top: 20px;
+
+}
+
+.FriendContainer{
+  display: flex;
+  flex-direction: row;
+  margin: 10px;
+
+}
+
+
+.FriendContainer button{
+width: 60px;
+height: 60px;
+font-family: 'Courier New', Courier, monospace;
+background-color: blue;
+border:none;
+margin: 0;
+color: white;
 }
